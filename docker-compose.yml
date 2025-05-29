@@ -1,0 +1,8 @@
+services:
+  plex-scrobbler:
+    image: plex-scrobbler:latest
+    container_name: plex-scrobbler
+    restart: always
+    environment:
+      - PYTHONUNBUFFERED=1
+      - TZ=Europe/Bucharest
